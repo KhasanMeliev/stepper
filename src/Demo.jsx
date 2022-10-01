@@ -35,7 +35,7 @@ const Demo = () => {
       <Anchor href="https://www.youtube.com/watch?v=3koxJHZq1r0" target="_blank">
         <Button
           variant="outlined"
-          style={{ display: "block", margin: "60px auto" }}
+          style={{ display: "block", margin: "30px auto" }}
         >
           My Coding Channel
         </Button>
