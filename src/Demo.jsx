@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./Demo.css";
 const Demo = () => {
   const [active, setActive] = useState(1);
-
   const nextStep = () => {
     setActive((current) => (current < 3 ? current + 1 : current));
   };
