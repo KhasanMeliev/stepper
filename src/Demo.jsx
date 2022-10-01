@@ -12,12 +12,17 @@ const Demo = () => {
 
   return (
     <div className="box">
-      <Stepper active={active} onStepClick={setActive} breakpoint="sm">
+      <Stepper
+        active={active}
+        onStepClick={setActive}
+        breakpoint="sm"
+        style={{ width: "100%" }}
+      >
         <Stepper.Step label="First Step" description="Create an account">
           Step 1 content: Create an account
         </Stepper.Step>
         <Stepper.Step label="Second Step" description="Verify email">
-          Step 2 content: Verify Email
+          Step 2 content: Verify Email Address
         </Stepper.Step>
         <Stepper.Step label="Final Step" description="Get full access">
           Step 3 content: Get full access
@@ -32,7 +37,10 @@ const Demo = () => {
         </Button>
         <Button onClick={nextStep}>Next Step</Button>
       </Group>
-      <Anchor href="https://www.youtube.com/watch?v=3koxJHZq1r0" target="_blank">
+      <Anchor
+        href="https://www.youtube.com/watch?v=3koxJHZq1r0"
+        target="_blank"
+      >
         <Button
           variant="outlined"
           style={{ display: "block", margin: "30px auto" }}
