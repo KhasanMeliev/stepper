@@ -1,4 +1,4 @@
-import { Button, Group, Stepper } from "@mantine/core";
+import { Anchor, Button, Group, Stepper } from "@mantine/core";
 import React, { useState } from "react";
 import "./Demo.css";
 const Demo = () => {
@@ -32,6 +32,14 @@ const Demo = () => {
         </Button>
         <Button onClick={nextStep}>Next Step</Button>
       </Group>
+      <Anchor href="https://www.youtube.com/watch?v=3koxJHZq1r0" target="_blank">
+        <Button
+          variant="outlined"
+          style={{ display: "block", margin: "60px auto" }}
+        >
+          My Coding Channel
+        </Button>
+      </Anchor>
     </div>
   );
 };
